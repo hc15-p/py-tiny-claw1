@@ -52,4 +52,3 @@ def new_deepseek_openai_provider(model:str)->OpenAIProvider:
         raise RuntimeError("请设置DeepSeek_API_KEY环境变量")
     base_url="https://api.deepseek.com"
     return OpenAIProvider(client=openai.OpenAI(api_key=api_key,base_url=base_url),model=model,)
-#密钥 sk-16a87bd41c5045dab52293508129aa17
