@@ -11,6 +11,7 @@ class ToolCall:
 class Message:
     role:str=""
     content:str=""
+    reasoning_content:str=""
     tool_calls:list[ToolCall]=field(default_factory=list)
     tool_call_id:str=""
 @dataclass
